@@ -18,7 +18,7 @@ const ICONS = {
 function SkillCard({ name, icon }) {
   if (icon === "text") {
     return (
-      <div className="border border-acid/25 bg-panel rounded-lg h-24 flex items-center justify-center px-3">
+      <div className="border border-acid bg-panel rounded-lg h-24 flex items-center justify-center px-3">
         <span className="text-white text-sm font-medium text-center">{name}</span>
       </div>
     );
@@ -26,7 +26,7 @@ function SkillCard({ name, icon }) {
 
   if (icon === "spring") {
     return (
-      <div className="border border-acid/25 bg-panel rounded-lg h-24 flex items-center justify-center">
+      <div className="border border-acid bg-panel rounded-lg h-24 flex items-center justify-center">
         <span
           className="w-12 h-12 flex items-center justify-center"
           style={{
@@ -43,7 +43,7 @@ function SkillCard({ name, icon }) {
   }
 
   return (
-    <div className="border border-acid/25 bg-panel rounded-lg h-24 flex items-center justify-center">
+    <div className="border border-acid bg-panel rounded-lg h-24 flex items-center justify-center">
       {ICONS[icon]}
     </div>
   );
