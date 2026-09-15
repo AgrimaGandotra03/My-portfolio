@@ -92,8 +92,8 @@ export const resume = {
 };
 
 export const nav = [
-  { label: "HOME", href: "#home" },
-  { label: "ABOUT", href: "#about" },
-  { label: "PROJECTS", href: "#projects" },
-  { label: "RESUME", href: "#resume" },
+  { id: "home", label: "HOME", href: "#home" },
+  { id: "about", label: "ABOUT", href: "#about" },
+  { id: "projects", label: "PROJECTS", href: "#projects" },
+  { id: "resume", label: "RESUME", href: "#resume" },
 ];

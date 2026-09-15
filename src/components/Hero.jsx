@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-[85vh] sm:min-h-screen flex items-center px-6 sm:px-10 pt-28 sm:pt-24 pb-16 max-w-6xl mx-auto"
+      className="min-h-[calc(100vh-4rem)] flex items-center px-6 sm:px-10 py-16 max-w-6xl mx-auto"
     >
       <div className="w-full grid md:grid-cols-[1.15fr_0.85fr] items-center gap-6 lg:gap-10">
         <div>
@@ -27,7 +27,10 @@ export default function Hero() {
               className="inline-flex items-center gap-3 bg-acid text-ink font-semibold text-sm px-6 py-3 rounded-full hover:brightness-95 active:scale-[0.98] transition"
             >
               CONTACT ME
-              <span className="w-1.5 h-1.5 rounded-full bg-ink" aria-hidden="true" />
+              <span
+                className="w-1.5 h-1.5 rounded-full bg-ink"
+                aria-hidden="true"
+              />
             </a>
 
             <a

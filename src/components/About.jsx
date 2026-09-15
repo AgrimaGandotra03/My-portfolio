@@ -8,10 +8,13 @@ function Paragraph({ parts }) {
         typeof part === "string" ? (
           <span key={i}>{part}</span>
         ) : (
-          <span key={i} className={part.highlight ? "text-acid font-medium" : ""}>
+          <span
+            key={i}
+            className={part.highlight ? "text-acid font-medium" : ""}
+          >
             {part.text}
           </span>
-        )
+        ),
       )}
     </p>
   );
@@ -19,8 +22,11 @@ function Paragraph({ parts }) {
 
 export default function About() {
   return (
-    <section id="about" className="px-6 sm:px-10 py-20">
-      <div className="max-w-6xl mx-auto">
+    <section
+      id="about"
+      className="min-h-[calc(100vh-4rem)] flex flex-col items-center justify-center px-6 sm:px-10 py-16 max-w-6xl mx-auto w-full"
+    >
+      <div className="w-full">
         <h2 className="font-display text-2xl sm:text-3xl text-white tracking-wide mb-8">
           About me
         </h2>

@@ -2,8 +2,11 @@ import { resume } from "../data/profile";
 
 export default function Resume() {
   return (
-    <section id="resume" className="px-6 sm:px-10 py-20">
-      <div className="max-w-6xl mx-auto flex flex-col items-center text-center">
+    <section
+      id="resume"
+      className="min-h-[calc(100vh-4rem)] px-6 sm:px-10 py-16 max-w-6xl mx-auto w-full flex flex-col items-center justify-center text-center"
+    >
+      <div className="w-full flex flex-col items-center">
         <h2 className="font-display text-2xl sm:text-3xl text-white tracking-wide mb-10">
           RESUME
         </h2>
