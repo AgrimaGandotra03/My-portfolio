@@ -30,13 +30,15 @@ export default function Resume() {
           Download Resume
         </a>
 
-        <blockquote className="mt-14 max-w-lg">
-          <p className="font-display text-xl sm:text-2xl text-white leading-snug">
-            <span className="text-acid">&ldquo;</span>
-            {resume.quote}
-            <span className="text-acid">&rdquo;</span>
-          </p>
-        </blockquote>
+        {resume.quote && (
+          <blockquote className="mt-14 max-w-lg">
+            <p className="font-display text-xl sm:text-2xl text-white leading-snug">
+              <span className="text-acid">&ldquo;</span>
+              {resume.quote}
+              <span className="text-acid">&rdquo;</span>
+            </p>
+          </blockquote>
+        )}
       </div>
     </section>
   );

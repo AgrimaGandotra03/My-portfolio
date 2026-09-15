@@ -29,12 +29,19 @@ export const about = {
       "I aspire to become a ",
       { text: "backend developer", highlight: true },
       " while building a strong ",
-      { text: "understanding of AI technologies, particularly LLMs and RAG", highlight: true },
+      {
+        text: "understanding of AI technologies, particularly LLMs and RAG",
+        highlight: true,
+      },
       ". I'm also keen to explore cloud computing and scalable application development using technologies like ",
       { text: "AWS, Docker, and Kubernetes", highlight: true },
       ".",
     ],
-    ["Beyond code, I enjoy travelling, exploring different cultures, and experiencing their food."],
+    [
+      "Beyond coding, I'm a ",
+      { text: "confident communicator", highlight: true },
+      " who believes in giving my best to everything I take on.",
+    ],
   ],
   education: [
     {
@@ -79,7 +86,7 @@ export const projects = [
 ];
 
 export const resume = {
-  quote: "Impossible is only a mindset.",
+  quote: "",
   file: "/resume/Agrima_Gandotra_Resume.pdf",
   preview: "/resume/resume-preview.png",
 };

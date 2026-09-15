@@ -92,7 +92,7 @@ button:focus-visible {
 }
 @keyframes typing {
   0%, 8% { width: 0; }
-  45%, 60% { width: 14ch; }
+  45%, 60% { width: 13em; }
   95%, 100% { width: 0; }
 }
 @keyframes caret-blink {
@@ -103,7 +103,7 @@ button:focus-visible {
 @media (prefers-reduced-motion: reduce) {
   .typewriter {
     animation: none !important;
-    width: 14ch;
+    width: 13em;
     border-right-color: transparent;
   }
 }
