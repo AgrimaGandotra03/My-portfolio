@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Resume from "./components/Resume";
 import Footer from "./components/Footer";
@@ -37,6 +38,7 @@ export default function App() {
       <main className="flex-1 w-full">
         <Hero />
         <About />
+        <Skills />
         <Projects />
         <Resume />
       </main>

@@ -51,27 +51,30 @@ function SkillCard({ name, icon }) {
 
 export default function Skills() {
   return (
-    <section className="px-6 sm:px-10 py-20">
-      <div className="max-w-6xl mx-auto flex flex-col items-center">
-        <h2 className="font-display text-2xl sm:text-3xl text-white tracking-wide mb-10 text-center">
+    <section
+      id="skills"
+      className="min-h-[calc(100vh-4rem)] flex flex-col items-center justify-center px-6 sm:px-10 py-16 max-w-6xl mx-auto w-full"
+    >
+      <div className="w-full flex flex-col items-center">
+        <h2 className="font-display text-2xl sm:text-3xl text-white tracking-wide mb-8 text-center">
           SKILLSET
         </h2>
-        <div className="grid grid-cols-3 gap-4 sm:gap-6 w-full max-w-md mb-16">
+        <div className="grid grid-cols-3 gap-4 sm:gap-6 w-full max-w-md mb-12">
           {skillset.map((s) => (
             <SkillCard key={s.name} {...s} />
           ))}
         </div>
 
-        <h2 className="font-display text-2xl sm:text-3xl text-white tracking-wide mb-10 text-center">
+        <h2 className="font-display text-2xl sm:text-3xl text-white tracking-wide mb-8 text-center">
           SKILLS I AM LEARNING
         </h2>
-        <div className="grid grid-cols-3 gap-4 sm:gap-6 w-full max-w-md mb-16">
+        <div className="grid grid-cols-3 gap-4 sm:gap-6 w-full max-w-md mb-12">
           {learning.map((s) => (
             <SkillCard key={s.name} {...s} />
           ))}
         </div>
 
-        <h2 className="font-display text-2xl sm:text-3xl text-white tracking-wide mb-10 text-center">
+        <h2 className="font-display text-2xl sm:text-3xl text-white tracking-wide mb-8 text-center">
           TOOLS I USE
         </h2>
         <div className="grid grid-cols-4 gap-3 sm:gap-6 w-full max-w-md">
